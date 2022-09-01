@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  height: 100vh;
+  background-color: #8dbdc9;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 50px;
+  width: 70%;
+}
+header p {
+  color: #fff;
+  text-align: left;
+  width: 200px;
+  font-size: 12px;
+  float: right;
+  margin-top: 140px;
+}
+.first__page .content__title {
+  background-color: #f1f1f1;
+  padding: 20px 70px;
+  text-align: center;
+}
+.content__title h1 {
+  text-align: center;
+}
+
+.first__text{
+    position: relative;
+    bottom: 20px;
+}
+
+.second__text{
+    position: relative;
+    top: 20px;
+}
+.first__text h1 {
+  color: #fff;
+  background-color: #cee3e8;
+  padding: 10px 15px;
+  margin-right: 15px;
+
+}
+.second__text h1 {
+  color: #fff;
+  background-color: #cee3e8;
+  padding: 10px 15px;
+  margin-right: 15px;
+  
+}
+.content__text p {
+  font-weight: bold;
+}
+.first__text p {
+  font-size: 14px;
+}
+.second__text p {
+  font-size: 14px;
+}
+.second__page {
+  background-color: #cee3e8;
+}
+.third__page {
+  text-align: center;
+}
+.third__page .cards {
+  transition: 0.3s;
+  padding: 15px;
+}
+.third__page .cards:hover {
+  background-color: #8dbdc9;
+}
+.third__page img {
+  border-radius: 50%;
+}
+
+.fifth__page {
+  background-color: #8dbdc9;
+  height: 75vh;
+  display: block;
+  align-items: center;
+}
+
+.author__text {
+  padding: 40px 20px;
+  background-color: white;
+}
+.content__author h4 {
+  text-align: center;
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+.author__text h2 {
+  margin: 20px 0 0 20px;
+}
+.author__text .quotes {
+  width: 25px;
+  height: 25px;
+  background-color: #8dbdc9;
+  position: relative;
+  top: -20px;
+  margin-left: 10px;
+}
+.author__text .quotes::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right: 10px solid #8dbdc9;
+  border-bottom: 5px solid #8dbdc9;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+}
+.author__text .quotes1 {
+  width: 25px;
+  height: 25px;
+  background-color: #8dbdc9;
+  position: relative;
+  top: -20px;
+  margin-left: 10px;
+}
+.author__text .quotes1::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right: 10px solid #8dbdc9;
+  border-bottom: 5px solid #8dbdc9;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+.sixth__page .tag{
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.sixth__page p{
+    font-size: 12px;
+}
+.left__price{
+    background-color:#cee3e8 ;
+}
+.right__price{
+    background-color: #8dbdc9;
+    color: white;
+}
+.price__info{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sixth__page button{
+    padding: 5px 40px;
+}
+.sixth__page button a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.sixth__page .left__btn{
+    background-color: #cee3e8;
+    border: #cee3e8;
+    color: black;
+    transition: .3s;
+}
+.sixth__page .left__btn:hover{
+    background-color: #8dbdc9;
+}
+.sixth__page .right__btn:hover{
+    background-color: #cee3e8;
+}
+.sixth__page .left__btn a{
+    color: black;
+}
+.sixth__page .right__btn{
+    background-color: #8dbdc9;
+    border: #8dbdc9;
+    transition: .3s;
+}
+.sixth__page .right__btn a{
+    color: white;
+}
+
+footer{
+    background-color: #cee3e8;
+}
+
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 40px;
+  }
+  header p{
+   margin-top: 80px;
+  }
+  header img{
+    width: 80%;
+  }
+  .mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  /* .mobile__corporation{
+    margin-top: 40px;
+  } */
+
+  .content__title{
+    margin-bottom: 40px;
+  }
+  .second__page{
+    padding-top: 0 !important;
+  }
+  .fourth__page .mobile__photo{
+    display: none;
+  }
+  .fourth__page .inner__photo img{
+    width: 100%;
+  }
+  .inner__text{
+    font-size: 12px;
+  }
+  .fifth__page{
+    height: 100%;
+  }
+}
+
+@media (min-width:600px) and (max-width:768px){
+  
+}
+
+@media (min-width:768px) and (max-width:992px){
+  header{
+    height: 50vh;
+  }
+  .fifth__page{
+    height: 45vh;
+  }
+  .fourth__page .mobile__photo{
+    display: block;
+  }
+  .inner__text h1{
+    font-size: 25px;
+  }
+  .inner__text p{
+    font-size: 15px;
+  }
+  .inner__photo img{
+    width: 100%;
+  }
+  footer img{
+    width: 80%;
+  }
+  footer h1{
+    font-size: 30px;
+  }
+  .sixth__page .tag h1{
+    font-size: 25px;
+  }
+  .sixth__page button a{
+    font-size: 13px;
+  }
+}
+
+@media (min-width:992px){
+
+}
